@@ -10,7 +10,7 @@
 
 <body>
     <header>
-        <nav class="bg-slate-200 flex justify-between items-center px-5 py-4">
+        <nav class="bg-white flex justify-between items-center px-5 py-2">
             <div class="hidden">
                 <ul class="space-y-1">
                     <li>
@@ -114,22 +114,53 @@
 
             <div>
                 <a href="">
-                    <img class="w-14 h-14" src="./assets/logo.svg" alt="Logo da marca">
+                    <img class="w-11 h-11" src="./assets/logo.svg" alt="Logo da marca">
                 </a>
             </div>
 
             <div>
                 <a href="">
-                    <img class="w-8 h-8" src="./assets/menu_close.svg" alt="">
+                    <img class="w-4 h-4" src="./assets/menu_close.svg" alt="">
                 </a>
             </div>
         </nav>
     </header>
 
     <main>
-        <section>
-            <div>
+        <section class=""">
+            <div class=" flex flex-col justify-end gap-2 px-6 bg-familia w-full h-[340px] bg-cover bg-center pb-4
+            shrink-0 snap-center sm:h-auto sm:pb-10">
+            <h1 class="text-white text-center text-3xl">Busce o seu carro</h1>
+            <form action="#" class="mt-2 flex flex-col gap-2 justify-center">
+                <div class="col-span-6 sm:col-span-3">
+                    <label for="LastName" class="block text-sm font-medium text-white">
+                        Retirada e devolução
+                    </label>
 
+                    <input type="text" id="LastName" name="last_name"
+                        class="mt-1 w-full rounded-md p-1 border-gray-200 bg-white text-sm text-gray-700 shadow-sm" />
+                </div>
+
+                <div class="datas flex gap-3 mb-2 justify-center">
+                    <div class="col-span-6 w-full">
+                        <label for="date" class="block text-sm font-medium text-white"> Data de retirada </label>
+
+                        <input type="date" min="2024-10-16" id="date" name="date"
+                            class="mt-1 w-full rounded-md p-1 border-gray-200 bg-white text-sm text-gray-700 shadow-sm" />
+                    </div>
+
+                    <div class="col-span-6 sm:col-span-3 w-full">
+                        <label for="date" class="block text-sm font-medium text-white"> Data de devolução </label>
+
+                        <input type="date" max="2025-10-01" id="date" name="date"
+                            class="mt-1 w-full rounded-md p-1  border-gray-200 bg-white text-sm text-gray-700 shadow-sm" />
+                    </div>
+                </div>
+                <button
+                    class="inline-block px-3 py-1 text-sm font-medium bg-white text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:relative rounded-md">
+                    Buscar
+                </button>
+            </form>
             </div>
         </section>
     </main>
