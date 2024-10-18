@@ -9,18 +9,18 @@
 </head>
 
 <body>
-    <header class="">
-        <nav class="bg-white flex justify-between items-center px-5 py-2">
-            <div class="hidden">
-                <ul class="space-y-1">
-                    <li>
-                        <a href="#" class="block rounded-lg bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700">
-                            General
-                        </a>
-                    </li>
+    <header>
+        <nav class="bg-white flex justify-between items-center px-5 py-2 ">
+            <div>
+                <a href="./index.html">
+                    <img class="w-11 h-11 lg:w-20 lg:h-20" src="./assets/logo.svg" alt="Logo da marca">
+                </a>
+            </div>
 
-                    <li>
-                        <details class="group [&_summary::-webkit-details-marker]:hidden">
+            <div class="hidden md:hidden lg:block">
+                <ul class="space-y-1 flex">
+                    <li class="m-0 p-0">
+                        <!-- <details class="group [&_summary::-webkit-details-marker]:hidden">
                             <summary
                                 class="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700">
                                 <span class="text-sm font-medium"> Teams </span>
@@ -50,28 +50,28 @@
                                     </a>
                                 </li>
                             </ul>
-                        </details>
+                        </details> -->
                     </li>
 
                     <li>
-                        <a href="#"
+                        <a href="./contato.html"
                             class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700">
-                            Billing
+                            Contato
                         </a>
                     </li>
 
                     <li>
-                        <a href="#"
+                        <a href="./serviços.html"
                             class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700">
-                            Invoices
+                            Serviços
                         </a>
                     </li>
 
                     <li>
-                        <details class="group [&_summary::-webkit-details-marker]:hidden">
+                        <details class="group [&_summary::-webkit-details-marker]:hidden lg:relative">
                             <summary
-                                class="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700">
-                                <span class="text-sm font-medium"> Account </span>
+                                class="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700 ">
+                                <span class="text-sm font-medium"> Tipos de carros </span>
 
                                 <span class="shrink-0 transition duration-300 group-open:-rotate-180">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20"
@@ -83,28 +83,26 @@
                                 </span>
                             </summary>
 
-                            <ul class="mt-2 space-y-1 px-4">
+                            <ul class="mt-2 space-y-1 px-4 lg:absolute lg:bg-white lg:rounded-md lg:pb-3">
                                 <li>
-                                    <a href="#"
+                                    <a href="./carros.html"
                                         class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700">
-                                        Details
+                                        SUV
                                     </a>
                                 </li>
 
                                 <li>
-                                    <a href="#"
+                                    <a href="./carros.html"
                                         class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700">
-                                        Security
+                                        Caminhonete
                                     </a>
                                 </li>
 
                                 <li>
-                                    <form action="#">
-                                        <button type="submit"
-                                            class="w-full rounded-lg px-4 py-2 text-sm font-medium text-gray-500 [text-align:_inherit] hover:bg-gray-100 hover:text-gray-700">
-                                            Logout
-                                        </button>
-                                    </form>
+                                    <a href="./carros.html"
+                                        class="w-full rounded-lg px-4 py-2 text-sm font-medium text-gray-500 [text-align:_inherit] hover:bg-gray-100 hover:text-gray-700">
+                                        hatch
+                                    </a>
                                 </li>
                             </ul>
                         </details>
@@ -112,13 +110,7 @@
                 </ul>
             </div>
 
-            <div>
-                <a href="./index.html">
-                    <img class="w-11 h-11" src="./assets/logo.svg" alt="Logo da marca">
-                </a>
-            </div>
-
-            <div>
+            <div class="lg:hidden">
                 <a href="">
                     <img class="w-4 h-4" src="./assets/menu_close.svg" alt="">
                 </a>
@@ -128,20 +120,21 @@
 
     <main>
         <section class="px-3 mb-4">
-            <h2 class="text-4xl mb-4 pt-12">Carros disponiveis</h2>
+            <h2 class="text-4xl mb-4 pt-12 sm:text-5xl">Carros disponiveis</h2>
 
-            <ul class="flex flex-col gap-6 mb-8">
-                <li class="shadow-xl rounded-md ">
+            <ul class="flex flex-col gap-6 mb-8 lg:flex xl:grid grid-cols-2   ">
+                <li class="shadow-xl rounded-md md:flex">
                     <div class="mb-4">
-                        <img class="" src="https://th.bing.com/th/id/OIP.uZ8vcOEpujMgpkDhOsyA8wHaE8?rs=1&pid=ImgDetMain"
-                            alt="" srcset="">
+                        <img class="w-full"
+                            src="https://th.bing.com/th/id/OIP.uZ8vcOEpujMgpkDhOsyA8wHaE8?rs=1&pid=ImgDetMain" alt=""
+                            srcset="">
                     </div>
                     <div class="py-2 px-4 ">
                         <span
-                            class="whitespace-nowrap rounded-full bg-green-100 px-2.5 py-0.5 text-lg text-green-600 mb-7">
+                            class="whitespace-nowrap rounded-full bg-green-100 px-2.5 py-0.5 text-lg text-green-600 mb-7 md:py-2">
                             Espaçoso
                         </span>
-                        <div class="flex justify-between mb-6 mt-4">
+                        <div class="flex justify-between mb-6 mt-4 md:flex-col gap-2 md:mb-1">
                             <h3 class="text-3xl">Jeep compass</h3>
                             <p>
                                 <span class="text-sm">R$</span>
@@ -149,7 +142,7 @@
                                 <span class="text-sm">/dia</span>
                             </p>
                         </div>
-                        <div class="flex justify-between pt-4 pb-7">
+                        <div class="flex justify-between pt-4 pb-7 md:flex-col gap-3">
                             <div class="flex align-bottom gap-2">
                                 <div class="w-8 h-8 ">
                                     <svg viewBox=" 0 0 200 200" width="100%" height="100%"
@@ -189,7 +182,7 @@
                                 <p class="text-2xl text-start">Ac</p>
                             </div>
                         </div>
-                        <a class="flex items-center justify-center gap-2 mx-10 mb-8 rounded border border-green-600 px-8 py-3 text-green-600 hover:bg-green-600 hover:text-white focus:outline-none focus:ring active:bg-green-500"
+                        <a class="flex items-center justify-center gap-2 mx-10 mb-8 rounded border border-green-600 px-8 py-3 text-green-600 hover:bg-green-600 hover:text-white focus:outline-none focus:ring active:bg-green-500 md:hidden"
                             href="#">
                             <span class="text-sm font-medium"> Escolher </span>
 
@@ -202,18 +195,18 @@
                     </div>
                 </li>
 
-                <li class="shadow-xl rounded-md ">
+                <li class="shadow-xl rounded-md md:flex ">
                     <div class="mb-4">
-                        <img class=""
-                            src="https://i1.wp.com/myautoworld.com/wp-content/uploads/2015/11/16_Civic_Sedan_034.jpg?fit=2500%2C1666&ssl=1"
-                            alt="" srcset="">
+                        <img class="w-full"
+                            src="https://th.bing.com/th/id/OIP.CkCEsyw01alt7GzHSe6VpgHaE8?rs=1&pid=ImgDetMain" alt=""
+                            srcset="">
                     </div>
                     <div class="py-2 px-4 ">
                         <span
                             class="whitespace-nowrap rounded-full bg-green-100 px-2.5 py-0.5 text-lg text-green-600 mb-7">
                             Economico
                         </span>
-                        <div class="flex justify-between mb-6 mt-4">
+                        <div class="flex justify-between mb-6 mt-4 md:flex-col gap-2 md:mb-1">
                             <h3 class="text-3xl">Honda civic</h3>
                             <p>
                                 <span class="text-sm">R$</span>
@@ -221,7 +214,7 @@
                                 <span class="text-sm">/dia</span>
                             </p>
                         </div>
-                        <div class="flex justify-between pt-4 pb-7">
+                        <div class="flex justify-between pt-4 pb-7 md:flex-col gap-3">
                             <div class="flex align-bottom gap-2">
                                 <div class="w-8 h-8 ">
                                     <svg viewBox=" 0 0 200 200" width="100%" height="100%"
@@ -261,7 +254,7 @@
                                 <p class="text-2xl text-start">Ac</p>
                             </div>
                         </div>
-                        <a class="flex items-center justify-center gap-2 mx-10 mb-8 rounded border border-green-600 px-8 py-3 text-green-600 hover:bg-green-600 hover:text-white focus:outline-none focus:ring active:bg-green-500"
+                        <a class="flex items-center justify-center gap-2 mx-10 mb-8 rounded border border-green-600 px-8 py-3 text-green-600 hover:bg-green-600 hover:text-white focus:outline-none focus:ring active:bg-green-500 md:hidden"
                             href="#">
                             <span class="text-sm font-medium"> Escolher </span>
 
@@ -274,18 +267,18 @@
                     </div>
                 </li>
 
-                <li class="shadow-xl rounded-md ">
+                <li class="shadow-xl rounded-md md:flex ">
                     <div class="mb-4">
-                        <img class=""
-                            src="https://static0.hotcarsimages.com/wordpress/wp-content/uploads/2022/12/toyota-corolla-hybrid-1.jpg"
-                            alt="" srcset="">
+                        <img class="w-[full]"
+                            src="https://th.bing.com/th/id/OIP.JonEllL9EL4FYeF-YAlqVQHaEK?rs=1&pid=ImgDetMain" alt=""
+                            srcset="">
                     </div>
                     <div class="py-2 px-4 ">
                         <span
                             class="whitespace-nowrap rounded-full bg-green-100 px-2.5 py-0.5 text-lg text-green-600 mb-7">
                             Economico
                         </span>
-                        <div class="flex justify-between mb-6 mt-4">
+                        <div class="flex justify-between mb-6 mt-4 md:flex-col gap-2 md:mb-1">
                             <h3 class="text-3xl">Toyota corrola</h3>
                             <p>
                                 <span class="text-sm">R$</span>
@@ -293,7 +286,7 @@
                                 <span class="text-sm">/dia</span>
                             </p>
                         </div>
-                        <div class="flex justify-between pt-4 pb-7">
+                        <div class="flex justify-between pt-4 pb-7 md:flex-col gap-3">
                             <div class="flex align-bottom gap-2">
                                 <div class="w-8 h-8 ">
                                     <svg viewBox=" 0 0 200 200" width="100%" height="100%"
@@ -333,7 +326,7 @@
                                 <p class="text-2xl text-start">Ac</p>
                             </div>
                         </div>
-                        <a class="flex items-center justify-center gap-2 mx-10 mb-8 rounded border border-green-600 px-8 py-3 text-green-600 hover:bg-green-600 hover:text-white focus:outline-none focus:ring active:bg-green-500"
+                        <a class="flex items-center justify-center gap-2 mx-10 mb-8 rounded border border-green-600 px-8 py-3 text-green-600 hover:bg-green-600 hover:text-white focus:outline-none focus:ring active:bg-green-500 md:hidden"
                             href="#">
                             <span class="text-sm font-medium"> Escolher </span>
 
@@ -346,10 +339,10 @@
                     </div>
                 </li>
 
-                <li class="shadow-xl rounded-md ">
+                <li class="shadow-xl rounded-md md:flex ">
                     <div class="mb-4">
-                        <img class=""
-                            src="https://quatrorodas.abril.com.br/wp-content/uploads/2022/07/Hyundai-HB20-3.jpg?quality=70&strip=info"
+                        <img class="w-[430px]"
+                            src="https://revistacarro.com.br/wp-content/uploads/2022/12/Novo-Hyundai-HB20-Edicao-Especial.jpg"
                             alt="" srcset="">
                     </div>
                     <div class="py-2 px-4 ">
@@ -357,7 +350,7 @@
                             class="whitespace-nowrap rounded-full bg-green-100 px-2.5 py-0.5 text-lg text-green-600 mb-7">
                             Espaçoso
                         </span>
-                        <div class="flex justify-between mb-6 mt-4">
+                        <div class="flex justify-between mb-6 mt-4 md:flex-col gap-2 md:mb-1">
                             <h3 class="text-3xl">Hyundai HB-20 </h3>
                             <p>
                                 <span class="text-sm">R$</span>
@@ -365,7 +358,7 @@
                                 <span class="text-sm">/dia</span>
                             </p>
                         </div>
-                        <div class="flex justify-between pt-4 pb-7">
+                        <div class="flex justify-between pt-4 pb-7 md:flex-col gap-3">
                             <div class="flex align-bottom gap-2">
                                 <div class="w-8 h-8 ">
                                     <svg viewBox=" 0 0 200 200" width="100%" height="100%"
@@ -405,7 +398,7 @@
                                 <p class="text-2xl text-start">Ac</p>
                             </div>
                         </div>
-                        <a class="flex items-center justify-center gap-2 mx-10 mb-8 rounded border border-green-600 px-8 py-3 text-green-600 hover:bg-green-600 hover:text-white focus:outline-none focus:ring active:bg-green-500"
+                        <a class="flex items-center justify-center gap-2 mx-10 mb-8 rounded border border-green-600 px-8 py-3 text-green-600 hover:bg-green-600 hover:text-white focus:outline-none focus:ring active:bg-green-500 md:hidden"
                             href="#">
                             <span class="text-sm font-medium"> Escolher </span>
 
@@ -418,17 +411,18 @@
                     </div>
                 </li>
 
-                <li class="shadow-xl rounded-md ">
+                <li class="shadow-xl rounded-md md:flex ">
                     <div class="mb-4">
-                        <img class="" src="https://th.bing.com/th/id/OIP.nFnmkQFI7AzuJyxXFD2ICwHaE8?rs=1&pid=ImgDetMain"
-                            alt="" srcset="">
+                        <img class="w-full"
+                            src="https://th.bing.com/th/id/OIP.nFnmkQFI7AzuJyxXFD2ICwHaE8?rs=1&pid=ImgDetMain" alt=""
+                            srcset="">
                     </div>
                     <div class="py-2 px-4 ">
                         <span
                             class="whitespace-nowrap rounded-full bg-green-100 px-2.5 py-0.5 text-lg text-green-600 mb-7">
                             Espaçoso
                         </span>
-                        <div class="flex justify-between mb-6 mt-4">
+                        <div class="flex justify-between mb-6 mt-4 md:flex-col gap-2 md:mb-1">
                             <h3 class="text-3xl">Jeep commander</h3>
                             <p>
                                 <span class="text-sm">R$</span>
@@ -436,7 +430,7 @@
                                 <span class="text-sm">/dia</span>
                             </p>
                         </div>
-                        <div class="flex justify-between pt-4 pb-7">
+                        <div class="flex justify-between pt-4 pb-7 md:flex-col gap-3">
                             <div class="flex align-bottom gap-2">
                                 <div class="w-8 h-8 ">
                                     <svg viewBox=" 0 0 200 200" width="100%" height="100%"
@@ -476,7 +470,7 @@
                                 <p class="text-2xl text-start">Ac</p>
                             </div>
                         </div>
-                        <a class="flex items-center justify-center gap-2 mx-10 mb-8 rounded border border-green-600 px-8 py-3 text-green-600 hover:bg-green-600 hover:text-white focus:outline-none focus:ring active:bg-green-500"
+                        <a class="flex items-center justify-center gap-2 mx-10 mb-8 rounded border border-green-600 px-8 py-3 text-green-600 hover:bg-green-600 hover:text-white focus:outline-none focus:ring active:bg-green-500 md:hidden"
                             href="#">
                             <span class="text-sm font-medium"> Escolher </span>
 
@@ -489,10 +483,11 @@
                     </div>
                 </li>
 
-                <li class="shadow-xl rounded-md ">
+                <li class="shadow-xl rounded-md md:flex ">
                     <div class="mb-4">
-                        <img class="" src="https://th.bing.com/th/id/OIP.AYtrS9bBNP47UBzoVCFuNQHaEo?rs=1&pid=ImgDetMain"
-                            alt="" srcset="">
+                        <img class="w-full"
+                            src="https://th.bing.com/th/id/OIP.AYtrS9bBNP47UBzoVCFuNQHaEo?rs=1&pid=ImgDetMain" alt=""
+                            srcset="">
                     </div>
                     <div class="py-2 px-4 ">
                         <span
@@ -507,7 +502,7 @@
                                 <span class="text-sm">/dia</span>
                             </p>
                         </div>
-                        <div class="flex justify-between pt-4 pb-7">
+                        <div class="flex justify-between pt-4 pb-7 md:flex-col gap-3">
                             <div class="flex align-bottom gap-2">
                                 <div class="w-8 h-8 ">
                                     <svg viewBox=" 0 0 200 200" width="100%" height="100%"
@@ -547,7 +542,7 @@
                                 <p class="text-2xl text-start">Ac</p>
                             </div>
                         </div>
-                        <a class="flex items-center justify-center gap-2 mx-10 mb-8 rounded border border-green-600 px-8 py-3 text-green-600 hover:bg-green-600 hover:text-white focus:outline-none focus:ring active:bg-green-500"
+                        <a class="flex items-center justify-center gap-2 mx-10 mb-8 rounded border border-green-600 px-8 py-3 text-green-600 hover:bg-green-600 hover:text-white focus:outline-none focus:ring active:bg-green-500 md:hidden"
                             href="#">
                             <span class="text-sm font-medium"> Escolher </span>
 
@@ -560,17 +555,18 @@
                     </div>
                 </li>
 
-                <li class="shadow-xl rounded-md ">
+                <li class="shadow-xl rounded-md md:flex ">
                     <div class="mb-4">
-                        <img class="" src="https://th.bing.com/th/id/OIP.ogD__3MsYFhXlTRebaizgQHaE8?rs=1&pid=ImgDetMain"
-                            alt="" srcset="">
+                        <img class="w-full"
+                            src="https://th.bing.com/th/id/OIP.ogD__3MsYFhXlTRebaizgQHaE8?rs=1&pid=ImgDetMain" alt=""
+                            srcset="">
                     </div>
                     <div class="py-2 px-4 ">
                         <span
                             class="whitespace-nowrap rounded-full bg-green-100 px-2.5 py-0.5 text-lg text-green-600 mb-7">
                             Espaçoso
                         </span>
-                        <div class="flex justify-between mb-6 mt-4">
+                        <div class="flex justify-between mb-6 mt-4 md:flex-col gap-2 md:mb-1">
                             <h3 class="text-3xl">Chevrolet camaro</h3>
                             <p>
                                 <span class="text-sm">R$</span>
@@ -578,7 +574,7 @@
                                 <span class="text-sm">/dia</span>
                             </p>
                         </div>
-                        <div class="flex justify-between pt-4 pb-7">
+                        <div class="flex justify-between pt-4 pb-7 md:flex-col gap-3">
                             <div class="flex align-bottom gap-2">
                                 <div class="w-8 h-8 ">
                                     <svg viewBox=" 0 0 200 200" width="100%" height="100%"
@@ -618,7 +614,7 @@
                                 <p class="text-2xl text-start">Ac</p>
                             </div>
                         </div>
-                        <a class="flex items-center justify-center gap-2 mx-10 mb-8 rounded border border-green-600 px-8 py-3 text-green-600 hover:bg-green-600 hover:text-white focus:outline-none focus:ring active:bg-green-500"
+                        <a class="flex items-center justify-center gap-2 mx-10 mb-8 rounded border border-green-600 px-8 py-3 text-green-600 hover:bg-green-600 hover:text-white focus:outline-none focus:ring active:bg-green-500 md:hidden"
                             href="#">
                             <span class="text-sm font-medium"> Escolher </span>
 
