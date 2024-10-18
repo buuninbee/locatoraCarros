@@ -10,17 +10,17 @@
 
 <body>
     <header>
-        <nav class="bg-white flex justify-between items-center px-5 py-2">
-            <div class="hidden">
-                <ul class="space-y-1">
-                    <li>
-                        <a href="#" class="block rounded-lg bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700">
-                            General
-                        </a>
-                    </li>
+        <nav class="bg-white flex justify-between items-center px-5 py-2 ">
+            <div>
+                <a href="">
+                    <img class="w-11 h-11 lg:w-20 lg:h-20" src="./assets/logo.svg" alt="Logo da marca">
+                </a>
+            </div>
 
-                    <li>
-                        <details class="group [&_summary::-webkit-details-marker]:hidden">
+            <div class="hidden md:hidden lg:block">
+                <ul class="space-y-1 flex">
+                    <li class="m-0 p-0">
+                        <!-- <details class="group [&_summary::-webkit-details-marker]:hidden">
                             <summary
                                 class="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700">
                                 <span class="text-sm font-medium"> Teams </span>
@@ -50,28 +50,28 @@
                                     </a>
                                 </li>
                             </ul>
-                        </details>
+                        </details> -->
                     </li>
 
                     <li>
                         <a href="#"
                             class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700">
-                            Billing
+                            Contato
                         </a>
                     </li>
 
                     <li>
                         <a href="#"
                             class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700">
-                            Invoices
+                            Serviços
                         </a>
                     </li>
 
                     <li>
-                        <details class="group [&_summary::-webkit-details-marker]:hidden">
+                        <details class="group [&_summary::-webkit-details-marker]:hidden lg:relative">
                             <summary
-                                class="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700">
-                                <span class="text-sm font-medium"> Account </span>
+                                class="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700 ">
+                                <span class="text-sm font-medium"> Tipos de carros </span>
 
                                 <span class="shrink-0 transition duration-300 group-open:-rotate-180">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20"
@@ -83,28 +83,26 @@
                                 </span>
                             </summary>
 
-                            <ul class="mt-2 space-y-1 px-4">
+                            <ul class="mt-2 space-y-1 px-4 lg:absolute lg:bg-white lg:rounded-md lg:pb-3">
                                 <li>
                                     <a href="#"
                                         class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700">
-                                        Details
+                                        SUV
                                     </a>
                                 </li>
 
                                 <li>
                                     <a href="#"
                                         class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700">
-                                        Security
+                                        Caminhonete
                                     </a>
                                 </li>
 
                                 <li>
-                                    <form action="#">
-                                        <button type="submit"
-                                            class="w-full rounded-lg px-4 py-2 text-sm font-medium text-gray-500 [text-align:_inherit] hover:bg-gray-100 hover:text-gray-700">
-                                            Logout
-                                        </button>
-                                    </form>
+                                    <a href=""
+                                        class="w-full rounded-lg px-4 py-2 text-sm font-medium text-gray-500 [text-align:_inherit] hover:bg-gray-100 hover:text-gray-700">
+                                        hatch
+                                    </a>
                                 </li>
                             </ul>
                         </details>
@@ -112,13 +110,7 @@
                 </ul>
             </div>
 
-            <div>
-                <a href="">
-                    <img class="w-11 h-11" src="./assets/logo.svg" alt="Logo da marca">
-                </a>
-            </div>
-
-            <div>
+            <div class="lg:hidden">
                 <a href="">
                     <img class="w-4 h-4" src="./assets/menu_close.svg" alt="">
                 </a>
@@ -127,59 +119,61 @@
     </header>
 
     <main>
-        <section class="mb-8">
+        <section class="mb-8 lg:mb-12">
             <div class=" flex flex-col justify-end gap-2 px-6 bg-familia w-full h-[340px] bg-cover bg-center pb-4
-            shrink-0 snap-center sm:h-auto sm:pb-10 ">
-                <h1 class="text-white text-center text-3xl">Busque o seu carro</h1>
-                <form action="#" class="mt-2 pb-4 flex flex-col gap-2 justify-center">
+            shrink-0 snap-center sm:pb-10 sm:h-[580px] sm:px-20 2xl:h-[750px] 2xl:px-[500px] 2xl:pb-44">
+                <h1 class="text-white text-center text-3xl sm:text-5xl">Busque o seu carro</h1>
+                <form action="#" class="mt-2 pb-4 flex flex-col gap-2 justify-center sm:gap-5">
                     <div class="col-span-6 sm:col-span-3">
-                        <label for="LastName" class="block text-sm font-medium text-white">
+                        <label for="LastName" class="block text-sm font-medium text-white sm:text-xl">
                             Retirada e devolução
                         </label>
 
                         <input type="text" id="LastName" name="last_name"
-                            class="mt-1 w-full rounded-md p-1 border-gray-200 bg-white text-sm text-gray-700 shadow-sm" />
+                            class="mt-1 w-full rounded-md p-1 border-gray-200 bg-white text-sm text-gray-700 shadow-sm sm:p-3" />
                     </div>
 
                     <div class="datas flex gap-3 mb-2 justify-center">
                         <div class="col-span-6 w-full">
-                            <label for="date" class="block text-sm font-medium text-white"> Data de retirada </label>
+                            <label for="date" class="block text-sm font-medium text-white sm:text-xl"> Data de retirada
+                            </label>
 
                             <input type="date" min="2024-10-16" id="date" name="date"
-                                class="mt-1 w-full rounded-md p-1 border-gray-200 bg-white text-sm text-gray-700 shadow-sm" />
+                                class="mt-1 w-full rounded-md p-1 border-gray-200 bg-white text-sm text-gray-700 shadow-sm sm:p-3" />
                         </div>
 
                         <div class="col-span-6 sm:col-span-3 w-full">
-                            <label for="date" class="block text-sm font-medium text-white"> Data de devolução </label>
+                            <label for="date" class="block text-sm font-medium text-white sm:text-xl"> Data de devolução
+                            </label>
 
                             <input type="date" max="2025-10-01" id="date" name="date"
-                                class="mt-1 w-full rounded-md p-1  border-gray-200 bg-white text-sm text-gray-700 shadow-sm" />
+                                class="mt-1 w-full rounded-md p-1  border-gray-200 bg-white text-sm text-gray-700 shadow-sm sm:p-3" />
                         </div>
                     </div>
                     <a href="./carros.html" class="inline-block px-3 py-1 text-sm font-medium bg-white text-gray-700
-                        hover:bg-gray-100 hover:text-gray-900 text-center focus:relative rounded-md">
+                        hover:bg-gray-100 hover:text-gray-900 text-center focus:relative rounded-md sm:p-3 sm:text-xl">
                         Buscar
                     </a>
                 </form>
             </div>
         </section>
 
-        <section class="px-3 mb-16">
-            <h2 class="text-4xl text-black mb-2">Encontre sua estadia</h2>
+        <section class="px-3 mb-16 sm:px-10">
+            <h2 class="text-4xl text-black mb-2 sm:mb-6 lg:text-5xl">Encontre sua estadia</h2>
 
-            <ul class="flex gap-3 pb-2 overflow-x-auto snap-x snap-mandatory">
+            <ul class="flex gap-3 pb-2 overflow-x-auto snap-x h-96 snap-mandatory">
                 <li class="relative overflow-hidden min-w-60 snap-center rounded-lg shadow transition hover:shadow-lg">
                     <a href="#">
                         <img alt="" src="https://th.bing.com/th/id/OIP.3RffV4NT9optO4_l3BJTRQHaEK?rs=1&pid=ImgDetMain"
                             class="absolute inset-0 h-full w-full object-cover" />
 
-                        <div class="relative bg-gradient-to-t  pt-32 sm:pt-48 lg:pt-64">
+                        <div class="relative bg-gradient-to-t  pt-32 sm:pt-64 lg:pt-64">
                             <div class="p-4 sm:p-6">
                                 <p
-                                    class="whitespace-nowrap rounded-full bg-green-50 w-max px-2.5 py-0.5 text-xs text-green-600">
+                                    class="whitespace-nowrap rounded-full bg-green-50 w-max px-2.5 py-0.5 text-xs text-green-600 sm:text-sm">
                                     R$ 320 por dia</p>
 
-                                <h3 class="mt-0.5 text-lg text-white">Bahia</h3>
+                                <h3 class="mt-0.5 text-lg text-white sm:text-3xl">Bahia</h3>
                             </div>
                         </div>
                     </a>
@@ -189,13 +183,13 @@
                         <img alt="" src="https://th.bing.com/th/id/OIP.QotYk0-lRmSynlFrB199HgHaFj?rs=1&pid=ImgDetMain"
                             class="absolute inset-0 h-full w-full object-cover" />
 
-                        <div class="relative bg-gradient-to-t  pt-32 sm:pt-48 lg:pt-64">
+                        <div class="relative bg-gradient-to-t  pt-32 sm:pt-64 lg:pt-64">
                             <div class="p-4 sm:p-6">
                                 <p
-                                    class="whitespace-nowrap rounded-full bg-green-50 w-max px-2.5 py-0.5 text-xs text-green-600">
+                                    class="whitespace-nowrap rounded-full bg-green-50 w-max px-2.5 py-0.5 text-xs text-green-600 sm:text-sm">
                                     R$ 120 por dia</p>
 
-                                <h3 class="mt-0.5 text-lg text-white">Ceára</h3>
+                                <h3 class="mt-0.5 text-lg text-white sm:text-3xl">Ceára</h3>
                             </div>
                         </div>
                     </a>
@@ -206,68 +200,190 @@
                             src="https://2.bp.blogspot.com/-BBYuJ6gTpPI/WB-nETCHRNI/AAAAAAAB_3U/iNdoOTgnVqIF70X1YF-TcdC4nHjh5vyNwCLcB/s1600/jalap%25C3%25A3o-1.jpg"
                             class="absolute inset-0 h-full w-full object-cover" />
 
-                        <div class="relative bg-gradient-to-t  pt-32 sm:pt-48 lg:pt-64">
+                        <div class="relative bg-gradient-to-t  pt-32 sm:pt-64 lg:pt-64">
                             <div class="p-4 sm:p-6">
                                 <p
-                                    class="whitespace-nowrap rounded-full bg-green-50 w-max px-2.5 py-0.5 text-xs text-green-600">
+                                    class="whitespace-nowrap rounded-full bg-green-50 w-max px-2.5 py-0.5 text-xs text-green-600 sm:text-sm">
                                     R$ 80 por dia</p>
 
-                                <h3 class="mt-0.5 text-lg text-white">Tocatins</h3>
+                                <h3 class="mt-0.5 text-lg text-white sm:text-3xl">Tocatins</h3>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="relative overflow-hidden min-w-60 snap-center rounded-lg shadow transition hover:shadow-lg">
+                    <a href="#">
+                        <img alt="" src="https://th.bing.com/th/id/OIP.3RffV4NT9optO4_l3BJTRQHaEK?rs=1&pid=ImgDetMain"
+                            class="absolute inset-0 h-full w-full object-cover" />
+
+                        <div class="relative bg-gradient-to-t  pt-32 sm:pt-64 lg:pt-64">
+                            <div class="p-4 sm:p-6">
+                                <p
+                                    class="whitespace-nowrap rounded-full bg-green-50 w-max px-2.5 py-0.5 text-xs text-green-600 sm:text-sm">
+                                    R$ 320 por dia</p>
+
+                                <h3 class="mt-0.5 text-lg text-white sm:text-3xl">Bahia</h3>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="relative overflow-hidden min-w-60 snap-center rounded-lg shadow transition hover:shadow-lg">
+                    <a href="#">
+                        <img alt="" src="https://th.bing.com/th/id/OIP.QotYk0-lRmSynlFrB199HgHaFj?rs=1&pid=ImgDetMain"
+                            class="absolute inset-0 h-full w-full object-cover" />
+
+                        <div class="relative bg-gradient-to-t  pt-32 sm:pt-64 lg:pt-64">
+                            <div class="p-4 sm:p-6">
+                                <p
+                                    class="whitespace-nowrap rounded-full bg-green-50 w-max px-2.5 py-0.5 text-xs text-green-600 sm:text-sm">
+                                    R$ 120 por dia</p>
+
+                                <h3 class="mt-0.5 text-lg text-white sm:text-3xl">Ceára</h3>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="relative overflow-hidden min-w-60 snap-center rounded-lg shadow transition hover:shadow-lg">
+                    <a href="#">
+                        <img alt=""
+                            src="https://2.bp.blogspot.com/-BBYuJ6gTpPI/WB-nETCHRNI/AAAAAAAB_3U/iNdoOTgnVqIF70X1YF-TcdC4nHjh5vyNwCLcB/s1600/jalap%25C3%25A3o-1.jpg"
+                            class="absolute inset-0 h-full w-full object-cover" />
+
+                        <div class="relative bg-gradient-to-t  pt-32 sm:pt-64 lg:pt-64">
+                            <div class="p-4 sm:p-6">
+                                <p
+                                    class="whitespace-nowrap rounded-full bg-green-50 w-max px-2.5 py-0.5 text-xs text-green-600 sm:text-sm">
+                                    R$ 80 por dia</p>
+
+                                <h3 class="mt-0.5 text-lg text-white sm:text-3xl">Tocatins</h3>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="relative overflow-hidden min-w-60 snap-center rounded-lg shadow transition hover:shadow-lg">
+                    <a href="#">
+                        <img alt=""
+                            src="https://2.bp.blogspot.com/-BBYuJ6gTpPI/WB-nETCHRNI/AAAAAAAB_3U/iNdoOTgnVqIF70X1YF-TcdC4nHjh5vyNwCLcB/s1600/jalap%25C3%25A3o-1.jpg"
+                            class="absolute inset-0 h-full w-full object-cover" />
+
+                        <div class="relative bg-gradient-to-t  pt-32 sm:pt-64 lg:pt-64">
+                            <div class="p-4 sm:p-6">
+                                <p
+                                    class="whitespace-nowrap rounded-full bg-green-50 w-max px-2.5 py-0.5 text-xs text-green-600 sm:text-sm">
+                                    R$ 80 por dia</p>
+
+                                <h3 class="mt-0.5 text-lg text-white sm:text-3xl">Tocatins</h3>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="relative overflow-hidden min-w-60 snap-center rounded-lg shadow transition hover:shadow-lg">
+                    <a href="#">
+                        <img alt="" src="https://th.bing.com/th/id/OIP.3RffV4NT9optO4_l3BJTRQHaEK?rs=1&pid=ImgDetMain"
+                            class="absolute inset-0 h-full w-full object-cover" />
+
+                        <div class="relative bg-gradient-to-t  pt-32 sm:pt-64 lg:pt-64">
+                            <div class="p-4 sm:p-6">
+                                <p
+                                    class="whitespace-nowrap rounded-full bg-green-50 w-max px-2.5 py-0.5 text-xs text-green-600 sm:text-sm">
+                                    R$ 320 por dia</p>
+
+                                <h3 class="mt-0.5 text-lg text-white sm:text-3xl">Bahia</h3>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="relative overflow-hidden min-w-60 snap-center rounded-lg shadow transition hover:shadow-lg">
+                    <a href="#">
+                        <img alt="" src="https://th.bing.com/th/id/OIP.QotYk0-lRmSynlFrB199HgHaFj?rs=1&pid=ImgDetMain"
+                            class="absolute inset-0 h-full w-full object-cover" />
+
+                        <div class="relative bg-gradient-to-t  pt-32 sm:pt-64 lg:pt-64">
+                            <div class="p-4 sm:p-6">
+                                <p
+                                    class="whitespace-nowrap rounded-full bg-green-50 w-max px-2.5 py-0.5 text-xs text-green-600 sm:text-sm">
+                                    R$ 120 por dia</p>
+
+                                <h3 class="mt-0.5 text-lg text-white sm:text-3xl">Ceára</h3>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="relative overflow-hidden min-w-60 snap-center rounded-lg shadow transition hover:shadow-lg">
+                    <a href="#">
+                        <img alt=""
+                            src="https://2.bp.blogspot.com/-BBYuJ6gTpPI/WB-nETCHRNI/AAAAAAAB_3U/iNdoOTgnVqIF70X1YF-TcdC4nHjh5vyNwCLcB/s1600/jalap%25C3%25A3o-1.jpg"
+                            class="absolute inset-0 h-full w-full object-cover" />
+
+                        <div class="relative bg-gradient-to-t  pt-32 sm:pt-64 lg:pt-64">
+                            <div class="p-4 sm:p-6">
+                                <p
+                                    class="whitespace-nowrap rounded-full bg-green-50 w-max px-2.5 py-0.5 text-xs text-green-600 sm:text-sm">
+                                    R$ 80 por dia</p>
+
+                                <h3 class="mt-0.5 text-lg text-white sm:text-3xl">Tocatins</h3>
                             </div>
                         </div>
                     </a>
                 </li>
             </ul>
+            </ul>
         </section>
 
-        <section class="px-3 mb-16">
-            <h2 class="text-4xl text-black mb-2">Explore, encontre e economize</h2>
+        <section class="px-3 mb-16 sm:px-10">
+            <h2 class="text-4xl text-black mb-2 sm:mb-6 lg:text-5xl">Explore, encontre e economize</h2>
 
             <ul class="flex flex-col gap-5">
                 <li class="">
-                    <a href="#" class="block">
+                    <a href="#" class="block lg:flex lg:gap-5">
                         <img alt=""
                             src="https://images.pexels.com/photos/18662890/pexels-photo-18662890/free-photo-of-mar-preto-e-branco-p-b-homem.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                            class="h-64 w-full object-cover sm:h-80 lg:h-96" />
+                            class="h-64 w-full object-cover sm:h-80 lg:h-96 lg:w-[540px] 2xl:w-[800px]" />
+                        <div class="lg:flex flex-col">
+                            <h3 class="mt-4 text-lg font-bold text-gray-900 sm:text-xl lg:text-2xl">Curta sua viagem sem
+                                preocupação
+                            </h3>
 
-                        <h3 class="mt-4 text-lg font-bold text-gray-900 sm:text-xl">Curta sua viagem sem preocupação
-                        </h3>
-
-                        <p class="mt-2 max-w-sm text-gray-700">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni reiciendis sequi ipsam
-                            incidunt.
-                        </p>
+                            <p class="mt-2 max-w-sm text-gray-700">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni reiciendis sequi ipsam
+                                incidunt.
+                            </p>
+                        </div>
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="block">
+                    <a href="#" class="block lg:flex lg:gap-5">
                         <img alt=""
                             src="https://images.pexels.com/photos/984917/pexels-photo-984917.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                            class="h-64 w-full object-cover sm:h-80 lg:h-96" />
+                            class="h-64 w-full object-cover sm:h-80 lg:h-96 lg:w-[540px] 2xl:w-[800px]" />
+                        <div class="lg:flex flex-col">
+                            <h3 class="mt-4 text-lg font-bold text-gray-900 sm:text-xl lg:text-2xl">Reservas com compra
+                                antecipada
+                            </h3>
 
-                        <h3 class="mt-4 text-lg font-bold text-gray-900 sm:text-xl">Reservas com compra antecipada
-                        </h3>
-
-                        <p class="mt-2 max-w-sm text-gray-700">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni reiciendis sequi ipsam
-                            incidunt.
-                        </p>
+                            <p class="mt-2 max-w-sm text-gray-700">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni reiciendis sequi ipsam
+                                incidunt.
+                            </p>
+                        </div>
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="block">
+                    <a href="#" class="block lg:flex lg:gap-5">
                         <img alt=""
                             src="https://images.pexels.com/photos/3119983/pexels-photo-3119983.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                            class="h-64 w-full object-cover sm:h-80 lg:h-96" />
+                            class="h-64 w-full object-cover sm:h-80 lg:h-96 lg:w-[540px] 2xl:w-[800px]" />
+                        <div class="lg:flex flex-col">
+                            <h3 class="mt-4 text-lg font-bold text-gray-900 sm:text-xl lg:text-2xl">Cancelamento grátis
+                                na maioria dos
+                                hotéis
+                            </h3>
 
-                        <h3 class="mt-4 text-lg font-bold text-gray-900 sm:text-xl">Cancelamento grátis na maioria dos
-                            hotéis
-                        </h3>
-
-                        <p class="mt-2 max-w-sm text-gray-700">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni reiciendis sequi ipsam
-                            incidunt.
-                        </p>
+                            <p class="mt-2 max-w-sm text-gray-700">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni reiciendis sequi ipsam
+                                incidunt.
+                            </p>
+                        </div>
                     </a>
                 </li>
             </ul>
@@ -275,7 +391,7 @@
     </main>
 
 
-    <footer class="bg-purple-950">
+    <footer class="bg-black">
         <div class="mx-auto max-w-screen-xl px-4 pb-16 pt-6 sm:px-6 lg:px-8">
             <div class="lg:flex lg:items-start lg:gap-8">
 
